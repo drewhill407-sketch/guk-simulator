@@ -1,0 +1,7 @@
+# Fall 3 – Depression
+
+Frau Sarah Müller ist 29 Jahre alt, verheiratet und hat vor sieben Wochen ihr erstes Kind zur Welt gebracht. Die Geburt verlief komplikationslos. Sie lebt mit ihrem Mann in einer Neubauwohnung in Linz; ihre Familie wohnt in Deutschland, sein Unterstützungsnetzwerk ist ebenfalls begrenzt. Keine Vorerkrankungen, keine Dauermedikation. Ihr Mann begleitete sie in die gynäkologische Nachsorge, wo die Hebamme die Weiterleitung zur psychiatrischen Ambulanz veranlasste.
+
+Sarah gibt an, sie liebe ihr Kind, aber fühle sich „wie hinter einer Glasscheibe". Sie weine täglich ohne erkennbaren Anlass, schlafe kaum — auch wenn das Baby schläft — und habe das Gefühl, eine schlechte Mutter zu sein. Sie esse wenig und habe kein Interesse an Dingen, die ihr früher wichtig waren. Auf Nachfrage der Hebamme gestand sie unter Tränen, dass sie manchmal denke, ihr Kind wäre ohne sie besser dran.
+
+Bei Aufnahme: RR 112/72 mmHg, HF 78/min, Temperatur 36,5 °C. Frau Müller wirkt erschöpft und weint während des Gesprächs mehrfach. Sie schämt sich sichtlich für ihre Gedanken und betont wiederholt, sie wolle ihrem Kind nichts antun. Die Pflegeperson begegnet ihr ohne Wertung, validiert ihre Erschöpfung und erklärt ruhig den Unterschied zwischen Gedanken und Handlungsabsichten. Der Mann ist anwesend, wirkt überfordert aber fürsorglich. Eine engmaschige ambulante Begleitung mit psychiatrischer und hebammengestützter Unterstützung wird geplant.

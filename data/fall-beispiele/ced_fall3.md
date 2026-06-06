@@ -1,0 +1,7 @@
+# Fall 3 – Chronisch entzündliche Darmerkrankungen
+
+Frau Andrea Summer ist 38 Jahre alt, verheiratet und arbeitet als Lehrerin. Sie leidet seit acht Jahren an Morbus Crohn, war über lange Zeit unter Azathioprin stabil. Aktuelle Medikation: Azathioprin 150 mg/d, Prednisolon 10 mg/d (Ausschleichschema seit vier Wochen). Sie stellt sich in der gastroenterologischen Ambulanz vor, da seit etwa zwei Monaten neue Beschwerden außerhalb des Darms aufgetreten sind.
+
+Sie berichtet von anhaltenden Schmerzen und Schwellungen in beiden Handgelenken und Kniegelenken, die morgens besonders schlimm seien. Auf der Haut der Unterschenkel sind ihr rote, druckschmerzhafte Erhebungen aufgefallen. Seit etwa drei Wochen hat sie gerötete, brennende Augen — ihr Optiker habe eine Entzündung festgestellt und an den Hausarzt verwiesen. Die Darmbeschwerden selbst sind aktuell moderat: vier Stühle täglich, kein Blut, leichte Bauchschmerzen.
+
+Bei Aufnahme: RR 124/78 mmHg, HF 76/min, Temperatur 37,1 °C. Frau Summer ist wach und orientiert, wirkt besorgt aber gefasst. Die Gelenke der Handgelenke und Knie sind leicht geschwollen, an den Unterschenkeln sind mehrere druckschmerzhafte, erythematöse Knoten sichtbar (Erythema nodosum). Die Augen sind beidseitig gerötet. Das Team erklärt ihr den Zusammenhang zwischen Morbus Crohn und extraintestinalen Manifestationen — sie ist erleichtert, dass es eine Erklärung gibt. Ein interdisziplinäres Konsil wird eingeleitet.

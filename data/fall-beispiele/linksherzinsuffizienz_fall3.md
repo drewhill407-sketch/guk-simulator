@@ -1,0 +1,7 @@
+# Fall 3 – Linksherzinsuffizienz
+
+Frau Sabine Gruber ist 54 Jahre alt, geschieden und lebt alleine. Sie arbeitet als Reinigungskraft und gibt an, sich keine längeren Krankenstände leisten zu können. Bekannte Vorerkrankungen: arterielle Hypertonie, Adipositas, Zustand nach Myokarditis vor zwei Jahren, seither in kardiologischer Nachsorge. Aktuelle Medikation: Metoprolol 50 mg (1-0-0), Perindopril 4 mg (1-0-0); das empfohlene Diuretikum habe sie laut eigenen Angaben zuletzt nicht regelmäßig eingenommen, weil sie „auf der Arbeit nicht ständig auf die Toilette rennen" könne.
+
+Sie kommt auf Drängen ihrer Tochter in die Ambulanz. Seit etwa zehn Tagen sei sie nach wenigen Schritten außer Atem; Treppensteigen sei kaum noch möglich. Nachts müsse sie mit erhöhtem Oberkörper schlafen. Sie gibt an, sich außerdem seit Wochen sehr müde zu fühlen und kaum Appetit zu haben. Ihre Tochter berichtet, dass die Mutter deutlich zugenommen habe.
+
+Bei Aufnahme: RR 158/96 mmHg, HF 100/min, Atemfrequenz 24/min, SpO₂ 88 % (Raumluft), Temperatur 36,7 °C. Frau Gruber wirkt blass und erschöpft, spricht in kurzen Sätzen. Über den Lungenbasen beidseits sind feine Rasselgeräusche hörbar. Die Beine zeigen ausgeprägte Ödeme beidseits, die Haut über den Knöcheln ist gespannt und glänzend. Sie wird stationär aufgenommen. Im Gespräch zeigt sie sich einsichtig, sobald die Zusammenhänge zwischen Medikamentenpause und aktueller Verschlechterung erklärt werden.

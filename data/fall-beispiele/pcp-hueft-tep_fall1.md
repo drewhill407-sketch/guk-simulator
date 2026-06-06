@@ -1,0 +1,7 @@
+# Fall 1 – Hüft-TEP
+
+Frau Gertrude Pichler ist 69 Jahre alt, verwitwet und lebt alleine in einer Erdgeschosswohnung in Klagenfurt. Ihre Tochter wohnt in der Nähe und hilft ihr regelmäßig bei Einkäufen. Frau Pichler ist pensionierte Lehrerin, liest viel und ist Mitglied in einem Seniorenchor. Bis vor einem Jahr ging sie täglich spazieren; seitdem hat sie das weitgehend aufgegeben. Vorerkrankungen: arterielle Hypertonie, Osteoporose. Aktuelle Medikation: Ramipril 5 mg (1-0-0), Alendronat 70 mg (1x wöchentlich), Kalzium 500 mg (0-1-0), Vitamin D3 1000 IE (1-0-0).
+
+Seit etwa zwei Jahren klagt sie über zunehmende Schmerzen in der rechten Hüfte, die sich beim Gehen und Treppensteigen verstärken. Zuletzt waren auch die ersten Schritte am Morgen besonders schmerzhaft. Konservative Maßnahmen — Physiotherapie und Schmerzmedikation — brachten keine ausreichende Besserung. Nach ausführlicher Besprechung mit dem Orthopäden entschied sie sich für den operativen Eingriff. Sie wird heute zur geplanten Operation aufgenommen.
+
+Bei Aufnahme: RR 136/82 mmHg, HF 70/min, Temperatur 36,7 °C, SpO₂ 98 %. Das Gangbild ist hinkend, die Beweglichkeit der rechten Hüfte deutlich eingeschränkt und schmerzhaft. Das Körpergewicht wird sichtlich auf die linke Seite verlagert. Frau Pichler ist gut informiert und wirkt gefasst, äußert jedoch eine gewisse Nervosität vor der Narkose. Sie fragt, wie lange sie nach der Operation im Krankenhaus bleiben muss und wann sie wieder selbstständig gehen kann.

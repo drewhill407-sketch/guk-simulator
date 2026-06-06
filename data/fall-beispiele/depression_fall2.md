@@ -1,0 +1,7 @@
+# Fall 2 – Depression
+
+Herr Otto Brandl ist 68 Jahre alt, verheiratet und seit zwei Jahren in Pension. Er war Polizist, körperlich aktiv und nach Aussage seiner Frau „immer derjenige, der alles im Griff hatte". Vorerkrankungen: arterielle Hypertonie, Zustand nach Bandscheibenoperation. Aktuelle Medikation: Amlodipin 5 mg (1-0-0). Seine Frau begleitete ihn in die Hausarztpraxis, von wo er zur psychiatrischen Ambulanz weitergeleitet wurde.
+
+Er klagt seit Monaten über Rückenschmerzen, Schlafstörungen, Appetitlosigkeit und anhaltende Erschöpfung. Er habe mehrere Fachärzte aufgesucht, organisch sei aber nichts Wesentliches gefunden worden. Auf Nachfrage gibt er zu, dass er sich seit der Pension „irgendwie nutzlos" fühle und keinen Antrieb mehr habe. Das Wort „Depression" lehnt er ab: er sei kein „Psychofall", er habe körperliche Beschwerden. Seine Frau sagt leise, er habe auch aufgehört, mit Freunden wegzugehen, und weine manchmal nachts, wenn er glaube, sie schlafe.
+
+Bei Aufnahme in der psychiatrischen Ambulanz: RR 144/88 mmHg, HF 70/min, Temperatur 36,6 °C. Herr Brandl sitzt aufrecht, wirkt äußerlich gefasst, aber angespannt. Er spricht sachlich, vermeidet emotionale Themen und lenkt wiederholt auf seine körperlichen Beschwerden. Der behandelnde Arzt und die Pflegeperson nehmen sich Zeit, hören ohne Wertung zu. Herr Brandl stimmt am Ende des Gesprächs zögernd einer ambulanten Behandlung zu.

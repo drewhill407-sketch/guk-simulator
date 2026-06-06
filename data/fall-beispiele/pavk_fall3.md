@@ -1,0 +1,7 @@
+# Fall 3 – PAVK
+
+Frau Herta Moser ist 78 Jahre alt, verwitwet und lebt alleine in einer Wohnung ohne Aufzug im zweiten Stock. Ihre Tochter wohnt in einer anderen Stadt und kommt einmal im Monat zu Besuch. Frau Moser hat bis vor zehn Jahren geraucht, leidet an Diabetes mellitus Typ 2, arterieller Hypertonie und einer bekannten PAVK, die bisher medikamentös behandelt wurde. Aktuelle Medikation: Clopidogrel 75 mg (1-0-0), Ramipril 5 mg (1-0-0), Amlodipin 5 mg (1-0-0), Insulin human (zu den Mahlzeiten).
+
+Ihre Tochter stellte beim letzten Besuch vor drei Wochen eine offene Wunde an der linken großen Zehe fest. Frau Moser hatte sie mit einem Pflaster abgedeckt und nichts weiter unternommen, da sie die Treppe kaum noch schafft und keinen Hausarzt mehr aufsucht. Die Tochter ist nun zu Besuch, findet die Wunde deutlich verschlechtert und bringt die Mutter direkt in die Notaufnahme.
+
+Bei Aufnahme: RR 150/90 mmHg, HF 80/min, SpO₂ 94 % (Raumluft), Temperatur 37,6 °C. An der linken Großzehe zeigt sich eine schwärzlich verfärbte, übelriechende Wunde mit gerötetem Wundrand. Der linke Fuß ist kühl und blass, Pulse sind nicht tastbar. Frau Moser wirkt apathisch und entschuldigt sich mehrfach bei ihrer Tochter. Sie gibt kaum Schmerzen an, was angesichts des Befundes auffällig ist. Das Team leitet umgehend Wundversorgung und Diagnostik ein; die Tochter ist sichtlich erschüttert und stellt viele Fragen zur weiteren Prognose.

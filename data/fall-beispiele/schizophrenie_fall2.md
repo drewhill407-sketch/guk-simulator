@@ -1,0 +1,7 @@
+# Fall 2 – Schizophrenie
+
+Frau Marina Horvat ist 35 Jahre alt, ledig und lebt alleine in einer Sozialwohnung in Graz. Sie ist seit dem zwanzigsten Lebensjahr in psychiatrischer Behandlung und hat mehrere stationäre Aufenthalte hinter sich. Zuletzt war sie über zwei Jahre stabil. Aktuelle Medikation: Olanzapin 10 mg (0-0-1) — laut Betreuerin der begleitenden Wohnunterstützung hat sie das Medikament vor etwa sechs Wochen eigenmächtig abgesetzt, weil sie sich „endlich normal" fühle und zunehme.
+
+Die Betreuerin stellte in den letzten Wochen zunehmende Auffälligkeiten fest: Frau Horvat schlief kaum, vernachlässigte die Wohnung und äußerte, ihre Nachbarn würden Gase durch die Lüftung leiten, um sie zu vergiften. Heute öffnete sie der Betreuerin nicht mehr und sprach durch die Tür, sie werde die Wohnung nicht mehr verlassen. Die Betreuerin veranlasste die Einweisung.
+
+Bei Aufnahme: RR 122/78 mmHg, HF 96/min, Temperatur 36,5 °C. Frau Horvat ist wach und spricht zusammenhängend, jedoch ist ihr Denken deutlich eingeengt und von Verfolgungsideen durchzogen. Sie lehnt eine freiwillige Aufnahme zunächst ab und gibt an, sie brauche keine Hilfe. Sie wirkt misstrauisch, aber nicht aggressiv. Im weiteren Gespräch zeigt sich eine geringe Öffnung, als eine ihr bekannte Pflegeperson anwesend ist. Die stationäre Aufnahme wird im Rahmen der rechtlichen Möglichkeiten eingeleitet; das Team dokumentiert sorgfältig.
