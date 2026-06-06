@@ -1,0 +1,7 @@
+# Fall 1 – Multiple Sklerose
+
+Frau Sandra Hölzl ist 34 Jahre alt, ledig und wohnt alleine in einer Mietwohnung in Wien. Sie arbeitet als Grafikdesignerin in einem kleinen Werbeunternehmen, hauptsächlich am Computer. In ihrer Freizeit ist sie aktiv — sie fährt Fahrrad, trifft sich regelmäßig mit Freunden und reist gerne. Ihre Eltern wohnen in Niederösterreich und kommen gelegentlich zu Besuch. Relevante Vorerkrankungen sind nicht bekannt, sie nimmt keine Dauermedikation.
+
+Vor etwa drei Monaten bemerkte sie erstmals ein Kribbeln im linken Bein, das sie zunächst auf langes Sitzen zurückführte. In den letzten Wochen traten zunehmend Sehstörungen auf dem rechten Auge auf — eine Art Schleier, verbunden mit leichten Schmerzen bei Augenbewegungen. Außerdem fühlt sie sich seit Wochen ungewohnt erschöpft, obwohl sie ausreichend schläft. Nachdem die Beschwerden nicht besser wurden, suchte sie ihren Hausarzt auf, der sie zur weiteren Abklärung ins Krankenhaus überwies.
+
+Bei Aufnahme: RR 118/74 mmHg, HF 72/min, Temperatur 36,6 °C, SpO₂ 99 %. Neurologisch zeigt sich eine verminderte Sensibilität im linken Bein sowie eine deutlich eingeschränkte Sehschärfe rechts. Die Koordination ist leicht beeinträchtigt — beim Gehen auf einer Linie schwankt sie. In der Bildgebung des Kopfes und der Wirbelsäule finden sich mehrere auffällige Stellen im Bereich der weißen Substanz, die auf wiederkehrende Entzündungsherde hinweisen. Frau Hölzl wirkt gefasst, stellt jedoch viele Fragen zur Bedeutung der Befunde und zeigt sich besorgt um ihre berufliche Zukunft.

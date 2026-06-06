@@ -1,0 +1,7 @@
+# Fall 1 – Morbus Parkinson
+
+Herr Friedrich Mayer ist 72 Jahre alt, verheiratet und wohnt mit seiner Frau in einer Wohnung in Linz. Die beiden Kinder leben in anderen Städten und melden sich regelmäßig. Er ist pensionierter Buchhalter, liest viel und spielt zweimal wöchentlich Schach in einem Verein. Seine Frau ist noch rüstig und übernimmt seit einiger Zeit zunehmend mehr Aufgaben im Haushalt. Die Erkrankung ist seit vier Jahren bekannt. Aktuelle Medikation: Levodopa/Carbidopa 100/25 mg (1-0-1-0), Pramipexol 0,18 mg (1-1-1).
+
+In letzter Zeit beobachtet seine Frau, dass die Medikamente weniger zuverlässig wirken als früher — es gibt Phasen am Tag, in denen Herr Mayer fast normal beweglich ist, und andere, in denen er kaum vom Sessel aufstehen kann. Das Schlucken fällt ihm zunehmend schwer, beim Essen verschluckt er sich gelegentlich. Die Sprache ist leiser und undeutlicher geworden. Er wurde zur Anpassung der Medikation stationär aufgenommen.
+
+Bei Aufnahme: RR 118/72 mmHg (im Liegen), 98/64 mmHg (im Stehen), HF 76/min, Temperatur 36,5 °C. Das Gangbild ist kleinschrittig und vornübergeneigt, der Armschwung fehlt. In Ruhephasen zeigt sich ein feines Zittern der rechten Hand. Die Mimik ist wenig ausdrucksstark, die Sprache leise und monoton. Herr Mayer ist orientiert und kognitiv unauffällig, wirkt jedoch zunehmend frustiert über seine eingeschränkte Selbstständigkeit. Seine Frau begleitet ihn und berichtet ruhig, aber sichtlich erschöpft vom Alltag der letzten Monate.

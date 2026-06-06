@@ -1,0 +1,7 @@
+# Fall 3 – Hüft-TEP
+
+Frau Herta Dangl ist 83 Jahre alt und lebt seit einem Jahr in einem Pflegeheim in der Nähe von Wien, nachdem das Leben zu Hause nach dem Tod ihres Mannes nicht mehr sicher möglich war. Sie hat drei erwachsene Kinder, die sie regelmäßig besuchen. Vor der Heimaufnahme war sie mit Gehhilfe noch mobil und konnte kurze Strecken selbstständig zurücklegen. Vorerkrankungen: arterielle Hypertonie, Herzrhythmusstörungen, beginnende Demenz. Aktuelle Medikation: Amlodipin 5 mg (1-0-0), Apixaban 2,5 mg (1-0-1), Quetiapin 25 mg (0-0-1), Pantoprazol 40 mg (1-0-0).
+
+Gestern Nachmittag wurde sie vom Pflegeheimpersonal auf dem Boden ihres Zimmers liegend aufgefunden. Wie es zum Sturz kam, kann sie nicht angeben. Sie klagte über Schmerzen in der linken Hüfte und wurde in die Unfallchirurgie eingewiesen. Bildgebend zeigt sich ein Knochenbruch im Bereich des linken Hüftgelenks. Aufgrund ihres Allgemeinzustands und der bestehenden Dauerantikoagulation wird die Operation sorgfältig vorbereitet; die Antikoagulation muss vor dem Eingriff entsprechend angepasst werden.
+
+Bei Aufnahme: RR 152/88 mmHg, HF 88/min (unregelmäßig), Temperatur 36,8 °C, SpO₂ 95 %. Frau Dangl ist wach, aber zeitlich desorientiert und wirkt ängstlich. Sie erkennt die Situation nur eingeschränkt und fragt wiederholt, wo sie sich befindet. Das linke Bein wird in Schonhaltung gehalten, jede Lageänderung ist schmerzhaft. Die Familie wurde informiert; die Tochter trifft in Kürze ein.

@@ -1,0 +1,7 @@
+# Fall 2 – Hüft-TEP
+
+Herr Rudolf Aschauer ist 77 Jahre alt und lebt gemeinsam mit seiner Frau in einem Einfamilienhaus in Niederösterreich. Das Haus hat eine Treppe ins Obergeschoss, wo sich das Schlafzimmer befindet. Sein Sohn wohnt im selben Ort. Herr Aschauer ist pensionierter Landwirt und war zeitlebens körperlich sehr aktiv. Vorerkrankungen: Diabetes mellitus Typ 2, koronare Herzerkrankung, Zustand nach Herzinfarkt vor vier Jahren. Aktuelle Medikation: Metformin 500 mg (1-0-1), ASS 100 mg (1-0-0), Bisoprolol 5 mg (1-0-0), Atorvastatin 40 mg (0-0-1), Ramipril 5 mg (1-0-0).
+
+Heute Morgen stürzte er auf dem Weg zur Toilette, nachdem er nachts aufgestanden war. Er konnte nicht mehr aufstehen und lag etwa eine Stunde auf dem Boden, bis seine Frau ihn fand. Der Rettungsdienst wurde alarmiert. Im Krankenhaus zeigt sich ein Knochenbruch im Bereich des rechten Hüftgelenks. Da eine konservative Behandlung bei diesem Bruchmuster nicht ausreichend ist, wird die operative Versorgung mit Einsetzen einer Hüftprothese für den nächsten Tag geplant.
+
+Bei Aufnahme: RR 148/90 mmHg, HF 82/min, Temperatur 36,9 °C, SpO₂ 96 %, BZ 8,4 mmol/l. Das rechte Bein wirkt im Vergleich zum linken verkürzt und nach außen gedreht. Jede Bewegung des Beines ist schmerzhaft; Herr Aschauer gibt die Schmerzstärke mit 8 von 10 an. Er ist wach und orientiert, wirkt jedoch erschöpft vom Sturz und dem Liegen auf dem Boden. Seine Frau ist anwesend und sehr besorgt.

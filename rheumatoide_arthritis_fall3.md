@@ -1,0 +1,7 @@
+# Fall 3 – Rheumatoide Arthritis
+
+Frau Miriam Lechner ist 72 Jahre alt, verwitwet und lebt seit drei Jahren in einer Seniorenwohnanlage in Innsbruck, wo sie eine kleine Wohnung mit Unterstützungsangebot bewohnt. Ihre beiden Söhne leben in anderen Bundesländern und melden sich regelmäßig telefonisch. Sie ist eine gesellige Person und nimmt gerne an den Gemeinschaftsaktivitäten im Haus teil. Die Erkrankung besteht seit über 20 Jahren; der Verlauf hat zu sichtbaren Gelenkveränderungen an Händen und Füßen geführt. Aktuelle Medikation: Leflunomid 20 mg (1-0-0), Prednisolon 7,5 mg (1-0-0), Kalzium 500 mg (0-1-0), Vitamin D3 1000 IE (1-0-0), Pantoprazol 40 mg (1-0-0).
+
+Die stationäre Einweisung erfolgte, nachdem das Betreuungspersonal der Wohnanlage bemerkte, dass Frau Lechner sich zunehmend schwer tut, selbstständig zu essen und sich anzuziehen. Zudem klagte sie über Schmerzen im rechten Schultergelenk, das seit einer Woche geschwollen ist. Fieber besteht nicht.
+
+Bei Aufnahme: RR 144/88 mmHg, HF 76/min, Temperatur 37,0 °C. An beiden Händen zeigen sich ausgeprägte Gelenkveränderungen mit Achsenabweichungen der Finger; die Greifkraft ist stark vermindert. Das rechte Schultergelenk ist geschwollen und die Beweglichkeit deutlich eingeschränkt. Im Labor leicht erhöhte Entzündungswerte, die Nierenwerte werden aufgrund der Langzeitmedikation mitkontrolliert. Frau Lechner ist kooperativ und fasst die Situation mit einer gewissen Gelassenheit auf, betont jedoch, dass ihr die Selbstständigkeit bei den Mahlzeiten sehr wichtig ist.

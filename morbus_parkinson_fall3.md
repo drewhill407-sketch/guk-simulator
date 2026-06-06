@@ -1,0 +1,7 @@
+# Fall 3 – Morbus Parkinson
+
+Herr Ernst Hofbauer ist 81 Jahre alt und lebt seit einem halben Jahr bei seiner Tochter und deren Familie in Graz, nachdem er zuhause alleine nicht mehr sicher leben konnte. Die Erkrankung besteht seit neun Jahren und hat sich zuletzt deutlich verschlechtert. Er ist auf einen Rollator angewiesen und benötigt bei der Körperpflege und beim Ankleiden vollständige Unterstützung. Die Tochter pflegt ihn aufopferungsvoll, wirkt jedoch zunehmend belastet. Vorerkrankungen: arterielle Hypertonie, Prostatahyperplasie. Aktuelle Medikation: Levodopa/Carbidopa 250/25 mg (1-0-1-0), Quetiapin 25 mg (0-0-1), Tamsulosin 0,4 mg (0-0-1), Ramipril 5 mg (1-0-0).
+
+Die Einweisung erfolgte, weil Herr Hofbauer seit drei Tagen kaum isst und trinkt und zunehmend verwirrt wirkt. Die Tochter berichtet, dass er in der Nacht unruhig ist, tagsüber schläft und sie kaum noch erkennt. Fieber besteht seit gestern.
+
+Bei Aufnahme: RR 104/68 mmHg, HF 98/min, Temperatur 38,6 °C, SpO₂ 93 % (Raumluft). Herr Hofbauer ist kaum weckbar und antwortet auf Ansprache nur mit unverständlichen Lauten. Die Muskelsteifigkeit ist ausgeprägt, eine Lageänderung ist nur passiv möglich. Der Schluckreflex ist stark verzögert. Im Labor zeigen sich erhöhte Entzündungswerte; im Röntgen ein Infiltrat in der rechten Lunge, vereinbar mit einer Aspirationspneumonie. Die Tochter ist verzweifelt und fragt das Team, ob ihr Vater diese Situation überstehen wird.

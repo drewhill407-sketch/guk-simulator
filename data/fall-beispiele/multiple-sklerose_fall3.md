@@ -1,0 +1,7 @@
+# Fall 3 – Multiple Sklerose
+
+Frau Renate Gruber ist 52 Jahre alt, geschieden und wohnt alleine in einer barrierefreien Erdgeschosswohnung in Linz. Ihre erwachsene Tochter lebt in derselben Stadt und unterstützt sie bei Einkäufen und Arztbesuchen. Frau Gruber ist seit zwölf Jahren in Frühpension; vor der Pensionierung arbeitete sie als Bürokauffrau. Die Erkrankung besteht seit 18 Jahren, der Verlauf hat sich in den letzten Jahren zunehmend verschlechtert. Sie ist auf einen Rollstuhl angewiesen und benötigt bei der Körperpflege teilweise Unterstützung. Aktuelle Medikation: Fampridin 10 mg (1-0-1), Oxybutynin 5 mg (1-0-1), Duloxetin 30 mg (1-0-0), Vitamin D3 2000 IE (1-0-0).
+
+Die stationäre Aufnahme erfolgte auf Wunsch der Tochter, nachdem Frau Gruber in den letzten Tagen mehrfach über starke Erschöpfung geklagt hatte und kaum noch in der Lage war, sich selbst zu versorgen. Zudem hat sie seit einer Woche erhöhte Temperaturen und klagt über Schmerzen beim Wasserlassen.
+
+Bei Aufnahme: RR 134/86 mmHg, HF 94/min, Temperatur 38,3 °C, SpO₂ 97 %. Der Urin ist trüb und hat einen auffälligen Geruch. Im Labor zeigen sich erhöhte Entzündungswerte. Die bestehende Muskelschwäche in den Beinen ist im Vergleich zu früheren Aufenthalten unverändert; die Arme sind funktionell eingeschränkt, aber noch einsetzbar. Frau Gruber wirkt müde, kooperiert jedoch gut. Sie äußert den Wunsch, so rasch wie möglich wieder nach Hause zu kommen, und betont, dass sie ihre Selbstständigkeit so lange wie möglich erhalten möchte.

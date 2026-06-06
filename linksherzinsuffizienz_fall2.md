@@ -1,0 +1,7 @@
+# Fall 2 – Linksherzinsuffizienz
+
+Herr Karl Fröhlich ist 68 Jahre alt, verheiratet und pensionierter Buchhalter. Er lebt mit seiner Frau in einer Wohnung im dritten Stock ohne Aufzug. Vorerkrankungen: dilatativer Kardiomyopathie seit sechs Jahren, Diabetes mellitus Typ 2, arterielle Hypertonie. Aktuelle Medikation: Carvedilol 12,5 mg (1-0-1), Enalapril 10 mg (1-0-1), Furosemid 40 mg (1-0-0), Spironolacton 25 mg (1-0-0), Metformin 1000 mg (1-0-1).
+
+Seine Frau berichtet, er sei seit gut zwei Wochen zunehmend antriebslos und schaffe die Treppe kaum noch. Zuletzt sei er bereits beim Anziehen außer Atem geraten. Er selbst spielt die Beschwerden herunter und meint, er sei eben „nicht mehr der Jüngste". Auf Nachfrage gibt er zu, dass er nachts mehrmals aufstehen und auf die Toilette gehen müsse, und dass er besser schlafe, wenn er zwei Kissen untergeschoben habe. Seine Frau hat bemerkt, dass er in den letzten Tagen kaum gegessen hat.
+
+Bei Aufnahme: RR 142/88 mmHg, HF 96/min, Atemfrequenz 22/min, SpO₂ 90 % (Raumluft), Temperatur 36,6 °C. Herr Fröhlich wirkt blass und erschöpft. Über den basalen Lungenabschnitten beidseits sind Rasselgeräusche hörbar. Die Venen am Hals sind deutlich gestaut, beide Unterschenkel zeigen teigige Ödeme bis zu den Knien. Das Körpergewicht liegt laut Frau Fröhlich um vier Kilogramm über dem Gewicht vor drei Wochen. Er wird stationär aufgenommen; die weitere Diagnostik und Therapieanpassung werden eingeleitet.

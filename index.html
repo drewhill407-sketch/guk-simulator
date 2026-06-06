@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GuK Prüfungssimulator</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f2efe9;
+  --white:#ffffff;
+  --border:#c8c4bb;
+  --border-dark:#222;
+  --text:#111;
+  --muted:#666;
+  --green:#2d6a4f;
+  --green-light:#e8f5ee;
+  --red:#c0392b;
+  --red-light:#fdecea;
+  --amber:#b45309;
+  --amber-light:#fef3c7;
+  --blue:#1e3a5f;
+  --blue-light:#e8f0fb;
+  --header-h:56px;
+}
+
+body{
+  font-family:'IBM Plex Sans',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+}
+
+/* ── SCREENS ── */
+.screen{display:none;min-height:100vh;}
+.screen.active{display:block;}
+
+/* ── LANDING ── */
+#screen-landing{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  min-height:100vh;
+  padding:2rem;
+}
+#screen-landing.active{display:flex;}
+
+.landing-card{
+  background:var(--white);
+  border:1.5px solid var(--border-dark);
+  box-shadow:5px 5px 0 var(--border);
+  max-width:480px;
+  width:100%;
+  padding:2.5rem;
+}
+
+.landing-card h1{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:4px;
+  letter-spacing:-.01em;
+}
+.landing-card .subtitle{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:2rem;
+}
+
+.field-label{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:6px;
+  display:block;
+}
+
+.krankheit-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin-bottom:1.5rem;
+  max-height:200px;
+  overflow-y:auto;
+  padding:2px;
+}
+
+.krankheit-chip{
+  font-size:11px;
+  padding:5px 8px;
+  border:1px solid var(--border);
+  background:var(--bg);
+  color:var(--muted);
+  cursor:default;
+  text-align:left;
+}
+
+.btn-primary{
+  width:100%;
+  padding:12px;
+  background:var(--text);
+  color:var(--white);
+  border:none;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.04em;
+  cursor:pointer;
+  text-transform:uppercase;
+}
+.btn-primary:hover{background:#333;}
+.btn-primary:disabled{background:#888;cursor:not-allowed;}
+
+.btn-secondary{
+  padding:8px 16px;
+  background:var(--white);
+  color:var(--text);
+  border:1px solid var(--border);
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:12px;
+  font-weight:500;
+  cursor:pointer;
+}
+.btn-secondary:hover{background:var(--bg);}
+
+/* ── EXAM HEADER ── */
+.exam-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--white);
+  border-bottom:1.5px solid var(--border-dark);
+  height:var(--header-h);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 1.5rem;
+  gap:1rem;
+}
+
+.exam-title{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;}
+.exam-krankheit{
+  font-size:11px;
+  font-weight:600;
+  background:var(--green-light);
+  color:var(--green);
+  padding:4px 10px;
+  letter-spacing:.03em;
+}
+
+.timer-wrap{text-align:right;}
+.timer{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:22px;
+  font-weight:500;
+  color:var(--text);
+  line-height:1;
+}
+.timer.over{color:var(--red);}
+.timer-label{font-size:10px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin-top:2px;}
+
+/* ── EXAM BODY ── */
+.exam-body{
+  max-width:1000px;
+  margin:0 auto;
+  padding:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+}
+
+/* ── SECTIONS ── */
+.section{
+  background:var(--white);
+  border:1px solid var(--border);
+}
+
+.section-head{
+  padding:8px 14px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.section-head h2{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ── FALL BEISPIEL ── */
+.fall-text{
+  padding:1rem 1.25rem;
+  font-size:13px;
+  line-height:1.8;
+  color:var(--text);
+}
+
+.fall-text p{margin-bottom:.5rem;}
+.fall-text p:last-child{margin-bottom:0;}
+.fall-text .fall-loading{color:var(--muted);font-style:italic;}
+.fall-text .fall-error{color:var(--red);font-size:12px;}
+.fall-text .fall-field-label{font-weight:600;}
+
+/* ── DURST ── */
+.durst-grid{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  border-top:none;
+}
+
+.durst-label{
+  padding:10px 14px;
+  font-size:12px;
+  font-weight:600;
+  border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  background:var(--bg);
+  color:var(--text);
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.durst-label span{font-size:10px;color:var(--muted);font-weight:400;}
+
+.durst-field{
+  border-bottom:1px solid var(--border);
+}
+
+.durst-grid .durst-label:last-of-type,
+.durst-grid .durst-field:last-of-type{border-bottom:none;}
+
+textarea.durst-ta{
+  width:100%;
+  border:none;
+  resize:vertical;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:12px;
+  color:var(--text);
+  background:transparent;
+  padding:10px 14px;
+  min-height:72px;
+  line-height:1.6;
+}
+textarea.durst-ta:focus{outline:none;background:#f8fdf9;}
+
+/* ── PFLEGEPLAN ── */
+table.pp{width:100%;border-collapse:collapse;table-layout:fixed;}
+col.pp-nr{width:44px;}
+col.pp-diag{width:32%;}
+col.pp-ziel{width:22%;}
+col.pp-zg{width:80px;}
+col.pp-int{width:auto;}
+
+table.pp th{
+  border:1px solid var(--border);
+  padding:6px 8px;
+  font-size:10px;
+  font-weight:600;
+  text-align:center;
+  background:var(--bg);
+  letter-spacing:.03em;
+  text-transform:uppercase;
+}
+
+table.pp td{
+  border:1px solid var(--border);
+  padding:0;
+  vertical-align:top;
+}
+
+td.pp-nr-cell{
+  text-align:center;
+  vertical-align:middle;
+  font-size:11px;
+  color:var(--muted);
+  background:#fafaf8;
+  padding:2px;
+}
+
+input.nr-in{
+  width:100%;border:none;background:transparent;
+  font-size:11px;font-family:'IBM Plex Mono',monospace;
+  text-align:center;color:var(--text);padding:4px 2px;
+}
+input.nr-in:focus{outline:none;background:#f8fdf9;}
+
+.diag-inner{display:flex;align-items:stretch;height:100%;}
+
+select.type-sel{
+  width:38px;min-width:38px;
+  border:none;border-right:1px solid var(--border);
+  background:#f5f3ee;
+  font-size:11px;font-weight:600;
+  font-family:'IBM Plex Sans',sans-serif;
+  color:var(--text);
+  cursor:pointer;
+  appearance:none;-webkit-appearance:none;
+  text-align:center;padding:0 2px;
+}
+select.type-sel:focus{outline:2px solid var(--green);}
+
+textarea.pp-ta{
+  width:100%;border:none;resize:none;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:11px;color:var(--text);
+  background:transparent;padding:5px 7px;
+  min-height:34px;line-height:1.5;overflow:hidden;
+}
+textarea.pp-ta:focus{outline:none;background:#f8fdf9;}
+
+/* ── SUBMIT BAR ── */
+.submit-bar{
+  display:flex;
+  justify-content:flex-end;
+  padding:1rem 0 2rem;
+}
+
+.btn-submit{
+  padding:12px 32px;
+  background:var(--text);
+  color:var(--white);
+  border:1.5px solid var(--border-dark);
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.btn-submit:hover{background:#333;}
+
+/* ── RESULTS SCREEN ── */
+#screen-results{background:var(--bg);}
+
+.results-header{
+  background:var(--white);
+  border-bottom:1.5px solid var(--border-dark);
+  padding:1rem 1.5rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.results-header h1{font-size:16px;font-weight:600;}
+
+.results-body{
+  max-width:1000px;
+  margin:0 auto;
+  padding:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+}
+
+.score-row{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+}
+
+.score-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  padding:1.25rem;
+  text-align:center;
+}
+.score-card .score-num{font-size:32px;font-weight:600;line-height:1;}
+.score-card .score-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:4px;}
+.score-green .score-num{color:var(--green);}
+.score-amber .score-num{color:var(--amber);}
+.score-red .score-num{color:var(--red);}
+.score-pending .score-num{color:var(--border);}
+
+.feedback-section{
+  background:var(--white);
+  border:1px solid var(--border);
+}
+
+.fb-head{
+  padding:8px 14px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.fb-body{padding:1rem 1.25rem;}
+
+.fb-item{
+  display:flex;
+  gap:10px;
+  margin-bottom:10px;
+  font-size:13px;
+  line-height:1.6;
+}
+.fb-item:last-child{margin-bottom:0;}
+
+.fb-dot{
+  width:8px;height:8px;border-radius:50%;
+  margin-top:6px;flex-shrink:0;
+}
+.dot-green{background:var(--green);}
+.dot-amber{background:#d97706;}
+.dot-red{background:var(--red);}
+
+/* ── STUB NOTICE ── */
+.stub-notice{
+  padding:1.25rem;
+  background:var(--amber-light);
+  border:1px solid #d97706;
+  font-size:13px;
+  line-height:1.6;
+  color:#7c4a00;
+}
+.stub-notice strong{display:block;margin-bottom:4px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;}
+
+/* ── SUBMITTED ANSWERS PREVIEW ── */
+.answer-preview{
+  background:var(--bg);
+  border:1px solid var(--border);
+  padding:10px 14px;
+  font-size:12px;
+  color:var(--text);
+  line-height:1.6;
+  white-space:pre-wrap;
+  margin-top:8px;
+  max-height:120px;
+  overflow-y:auto;
+}
+.answer-preview.empty{color:var(--muted);font-style:italic;}
+
+/* ── Q&A ── */
+.qa-wrap{
+  background:var(--white);
+  border:1px solid var(--border);
+}
+
+.qa-messages{
+  padding:1rem 1.25rem;
+  min-height:120px;
+  max-height:320px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  border-bottom:1px solid var(--border);
+}
+
+.qa-msg{
+  max-width:80%;
+  padding:8px 12px;
+  font-size:12px;
+  line-height:1.6;
+}
+
+.qa-msg.user{
+  align-self:flex-end;
+  background:var(--text);
+  color:var(--white);
+}
+
+.qa-msg.ai{
+  align-self:flex-start;
+  background:var(--bg);
+  border:1px solid var(--border);
+  color:var(--text);
+}
+
+.qa-input-row{
+  display:flex;
+  gap:0;
+}
+
+.qa-input-row textarea{
+  flex:1;
+  border:none;
+  padding:10px 14px;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:12px;
+  resize:none;
+  min-height:44px;
+  background:var(--white);
+}
+.qa-input-row textarea:focus{outline:none;background:#f8fdf9;}
+
+.qa-send{
+  width:80px;
+  border:none;
+  border-left:1px solid var(--border);
+  background:var(--text);
+  color:var(--white);
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:12px;
+  font-weight:600;
+  cursor:pointer;
+  letter-spacing:.04em;
+}
+.qa-send:hover{background:#333;}
+
+.print-row{
+  display:flex;
+  justify-content:flex-end;
+  padding:1rem 0 2rem;
+}
+
+@media print{
+  body{background:#fff;}
+  .exam-header,.results-header,.submit-bar,.print-row,.qa-wrap,.btn-secondary,.btn-primary,.btn-submit,.stub-notice{display:none!important;}
+  .screen{display:block!important;min-height:unset;}
+  #screen-landing{display:none!important;}
+  #screen-exam{page-break-after:always;}
+  .exam-body{padding:0;max-width:100%;}
+  .results-body{padding:0;max-width:100%;}
+  .section,.feedback-section,.score-row{break-inside:avoid;}
+  textarea.durst-ta,textarea.pp-ta{height:auto;min-height:unset;overflow:visible;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     SCREEN 1: LANDING
+══════════════════════════════════════════ -->
+<div id="screen-landing" class="screen active">
+  <div class="landing-card">
+    <h1>GuK Prüfungssimulator</h1>
+    <p class="subtitle">Diplomprüfung — Mündlich/Schriftlich Vorbereitung</p>
+
+    <label class="field-label">Verfügbare Krankheitsbilder (<span id="krankheit-count">25</span>)</label>
+    <div class="krankheit-list" id="krankheit-list">
+      <!-- populated by JS -->
+    </div>
+
+    <button class="btn-primary" id="btn-start" onclick="startExam()">Prüfung starten</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SCREEN 2: EXAM
+══════════════════════════════════════════ -->
+<div id="screen-exam" class="screen">
+
+  <div class="exam-header">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span class="exam-title">GuK Prüfungssimulator</span>
+      <span class="exam-krankheit" id="exam-krankheit-badge"></span>
+    </div>
+    <div class="timer-wrap">
+      <div class="timer" id="timer">15:00</div>
+      <div class="timer-label">verbleibend</div>
+    </div>
+  </div>
+
+  <div class="exam-body">
+
+    <!-- FALL BEISPIEL -->
+    <div class="section">
+      <div class="section-head">
+        <h2>Fall Beispiel</h2>
+        <span id="fall-meta" style="font-size:10px;color:var(--muted);"></span>
+      </div>
+      <div class="fall-text" id="fall-text">
+        <p class="fall-loading">Lädt Fall Beispiel…</p>
+      </div>
+    </div>
+
+    <!-- DURST -->
+    <div class="section">
+      <div class="section-head"><h2>DURST Schema</h2></div>
+      <div class="durst-grid">
+        <div class="durst-label">D<span>Definition</span></div>
+        <div class="durst-field"><textarea id="durst-d" class="durst-ta" placeholder="Was ist die Erkrankung? Definition, Klassifikation, relevante Subtypen…"></textarea></div>
+        <div class="durst-label">U<span>Ursachen &amp; Pathophysiologie</span></div>
+        <div class="durst-field"><textarea id="durst-u" class="durst-ta" placeholder="Ätiologie, Risikofaktoren, Pathomechanismus…"></textarea></div>
+        <div class="durst-label">R<span>Risiken &amp; Komplikationen</span></div>
+        <div class="durst-field"><textarea id="durst-r" class="durst-ta" placeholder="Komplikationen bei schlechter Behandlung, Krankheitsprogression…"></textarea></div>
+        <div class="durst-label">S<span>Symptome &amp; Diagnostik</span></div>
+        <div class="durst-field"><textarea id="durst-s" class="durst-ta" placeholder="Klinische Zeichen, Labor, Bildgebung…"></textarea></div>
+        <div class="durst-label">T<span>Therapie &amp; Pflege</span></div>
+        <div class="durst-field"><textarea id="durst-t" class="durst-ta" placeholder="Pharmakologie (Handelsname, Wirkung, NW), pflegerische Maßnahmen…"></textarea></div>
+      </div>
+    </div>
+
+    <!-- PFLEGEPLANUNG -->
+    <div class="section">
+      <div class="section-head">
+        <h2>Pflegeplanung — POP</h2>
+        <span style="font-size:10px;color:var(--muted);">PD · Ä · S · RF · R</span>
+      </div>
+      <table class="pp">
+        <colgroup>
+          <col class="pp-nr">
+          <col class="pp-diag">
+          <col class="pp-ziel">
+          <col class="pp-zg">
+          <col class="pp-int">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Nr.</th>
+            <th>Pflegediagnose</th>
+            <th>Pflegeziele</th>
+            <th>Zeitgrenze</th>
+            <th>Pflegeinterventionen</th>
+          </tr>
+        </thead>
+        <tbody id="pp-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="submit-bar">
+      <button class="btn-submit" id="btn-submit" onclick="submitExam()">Abgeben &amp; Bewerten →</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SCREEN 3: RESULTS
+══════════════════════════════════════════ -->
+<div id="screen-results" class="screen">
+
+  <div class="results-header">
+    <h1 id="results-title">Auswertung</h1>
+    <div style="display:flex;gap:8px;">
+      <button class="btn-secondary" onclick="printAll()">Drucken / PDF</button>
+      <button class="btn-secondary" onclick="newExam()">Neue Prüfung</button>
+    </div>
+  </div>
+
+  <div class="results-body">
+
+    <div class="score-row">
+      <div class="score-card score-pending" id="score-total">
+        <div class="score-num">—</div>
+        <div class="score-lbl">Gesamtergebnis</div>
+      </div>
+      <div class="score-card score-pending" id="score-durst">
+        <div class="score-num">—</div>
+        <div class="score-lbl">DURST Schema</div>
+      </div>
+      <div class="score-card score-pending" id="score-pp">
+        <div class="score-num">—</div>
+        <div class="score-lbl">Pflegeplanung</div>
+      </div>
+    </div>
+
+    <!-- AI stub notice -->
+    <div class="stub-notice">
+      <strong>KI-Auswertung — Schritt 2</strong>
+      Die automatische Bewertung durch Claude wird im nächsten Build-Schritt implementiert.
+      Deine Antworten wurden gespeichert und sind unten einsehbar. Nutze schon jetzt den Chat, um Fragen zu stellen — die KI-Antworten werden dann ebenfalls aktiviert.
+    </div>
+
+    <!-- Submitted DURST answers -->
+    <div class="feedback-section">
+      <div class="fb-head">Eingereichte Antworten — DURST Schema</div>
+      <div class="fb-body" id="submitted-durst">
+        <!-- populated on submit -->
+      </div>
+    </div>
+
+    <!-- Submitted Pflegeplanung summary -->
+    <div class="feedback-section">
+      <div class="fb-head">Eingereichte Pflegeplanung — Ausgefüllte Zeilen</div>
+      <div class="fb-body" id="submitted-pp">
+        <!-- populated on submit -->
+      </div>
+    </div>
+
+    <!-- Q&A -->
+    <div class="qa-wrap">
+      <div class="fb-head">Fragen zur Auswertung</div>
+      <div class="qa-messages" id="qa-messages">
+        <div class="qa-msg ai">Deine Antworten wurden gespeichert. Die KI-Auswertung wird in Schritt 2 aktiviert. Du kannst aber schon jetzt Fragen zum Krankheitsbild stellen — beachte, dass die Antworten noch nicht gegen deine Eingaben abgeglichen werden.</div>
+      </div>
+      <div class="qa-input-row">
+        <textarea id="qa-input" placeholder="Frage stellen…" rows="1"
+          onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendQA();}"></textarea>
+        <button class="qa-send" onclick="sendQA()">Senden</button>
+      </div>
+    </div>
+
+    <div class="print-row">
+      <button class="btn-secondary" onclick="printAll()">Als PDF speichern</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+'use strict';
+
+// ════════════════════════════════════════════
+// DATA MANIFEST
+// All 25 Krankheitsbilder with display names and file slugs.
+// Files are loaded from:
+//   data/fall-beispiele/{slug}_fall{1|2|3}.md
+//   data/krankheitsbilder/{slug}.md  (for AI evaluation, step 2)
+// ════════════════════════════════════════════
+const KRANKHEITSBILDER = [
+  { name: 'Zerebraler Insult',                      slug: 'zerebraler-insult' },
+  { name: 'Multiple Sklerose',                       slug: 'multiple-sklerose' },
+  { name: 'PCP (Hüft-TEP)',                          slug: 'pcp-hueft-tep' },
+  { name: 'Morbus Parkinson',                        slug: 'morbus-parkinson' },
+  { name: 'Schädelhirntrauma',                       slug: 'schaedelhirntrauma' },
+  { name: 'Querschnittlähmung',                      slug: 'querschnittlaehmung' },
+  { name: 'COPD',                                    slug: 'copd' },
+  { name: 'Pneumonie',                               slug: 'pneumonie' },
+  { name: 'Rechtsherzinsuffizienz',                  slug: 'rechtsherzinsuffizienz' },
+  { name: 'Linksherzinsuffizienz',                   slug: 'linksherzinsuffizienz' },
+  { name: 'Myokardinfarkt',                          slug: 'myokardinfarkt' },
+  { name: 'PAVK',                                    slug: 'pavk' },
+  { name: 'Diabetes mellitus Typ I & II',            slug: 'diabetes-mellitus' },
+  { name: 'Schizophrenie',                           slug: 'schizophrenie' },
+  { name: 'Delir',                                   slug: 'delir' },
+  { name: 'Depression',                              slug: 'depression' },
+  { name: 'Alkoholsucht',                            slug: 'alkoholsucht' },
+  { name: 'Chronisch entzündliche Darmerkrankungen', slug: 'ced' },
+  { name: 'Leukämie',                                slug: 'leukaemie' },
+  { name: 'Grundprinzipien der Onkologie',           slug: 'onkologie' },
+  { name: 'Niereninsuffizienz',                      slug: 'niereninsuffizienz' },
+  { name: 'Nierensteine',                            slug: 'nierensteine' },
+  { name: 'Darmkrebs',                               slug: 'darmkrebs' },
+  { name: 'Prostata-Karzinom',                       slug: 'prostata-karzinom' },
+  { name: 'Mamma-Karzinom',                          slug: 'mamma-karzinom' },
+  { name: 'Rheumatoide Arthritis',                   slug: 'rheumatoide-arthritis' },
+];
+
+// ════════════════════════════════════════════
+// APP STATE
+// ════════════════════════════════════════════
+const state = {
+  krankheitsbild: null,   // current KRANKHEITSBILDER entry
+  fallNum: null,          // 1 | 2 | 3
+  fallText: '',           // raw markdown of the loaded fall beispiel
+  submission: null,       // collected answers on submit
+  timerInterval: null,
+  seconds: 900,
+  timerOver: false,
+};
+
+// ════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════
+(function init() {
+  // Render Krankheitsbilder chips on landing screen
+  const list = document.getElementById('krankheit-list');
+  document.getElementById('krankheit-count').textContent = KRANKHEITSBILDER.length;
+  KRANKHEITSBILDER.forEach(k => {
+    const chip = document.createElement('div');
+    chip.className = 'krankheit-chip';
+    chip.textContent = k.name;
+    list.appendChild(chip);
+  });
+
+  // Auto-resize for DURST textareas
+  document.querySelectorAll('textarea.durst-ta').forEach(ta => {
+    ta.addEventListener('input', () => autoResize(ta));
+  });
+})();
+
+// ════════════════════════════════════════════
+// SCREEN MANAGEMENT
+// ════════════════════════════════════════════
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ════════════════════════════════════════════
+// TIMER
+// ════════════════════════════════════════════
+function startTimer() {
+  clearInterval(state.timerInterval);
+  state.seconds = 900;
+  state.timerOver = false;
+  const el = document.getElementById('timer');
+  el.classList.remove('over');
+  el.textContent = '15:00';
+
+  state.timerInterval = setInterval(() => {
+    state.seconds--;
+    if (state.seconds <= 0 && !state.timerOver) {
+      state.timerOver = true;
+      el.classList.add('over');
+    }
+    const abs = Math.abs(state.seconds);
+    const m = Math.floor(abs / 60);
+    const s = abs % 60;
+    const pad = n => String(n).padStart(2, '0');
+    el.textContent = (state.timerOver ? '+' : '') + pad(m) + ':' + pad(s);
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(state.timerInterval);
+}
+
+// ════════════════════════════════════════════
+// FALL BEISPIEL LOADING
+// ════════════════════════════════════════════
+
+/**
+ * Render markdown fall text as clean HTML.
+ * Strips heading, converts **Key:** lines to bold labels,
+ * preserves paragraphs.
+ */
+function renderFallText(md) {
+  const container = document.getElementById('fall-text');
+  container.innerHTML = '';
+
+  // Strip the first # heading line
+  let body = md.replace(/^#+[^\n]*\n?/, '').trim();
+
+  // Split into lines, render each
+  const lines = body.split('\n');
+  lines.forEach(line => {
+    const trimmed = line.trim();
+    if (!trimmed) return;
+
+    const p = document.createElement('p');
+
+    // Convert **label:** value → <strong>label:</strong> value
+    const html = trimmed
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+    p.innerHTML = html;
+    container.appendChild(p);
+  });
+}
+
+async function loadFallBeispiel(slug, fallNum) {
+  const path = `data/fall-beispiele/${slug}_fall${fallNum}.md`;
+  const resp = await fetch(path);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  return await resp.text();
+}
+
+// ════════════════════════════════════════════
+// PFLEGEPLAN TABLE
+// ════════════════════════════════════════════
+function buildPP() {
+  const tbody = document.getElementById('pp-tbody');
+  tbody.innerHTML = '';
+  for (let i = 0; i < 30; i++) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="pp-nr-cell"><input class="nr-in" type="text" aria-label="Nr."></td>
+      <td>
+        <div class="diag-inner">
+          <select class="type-sel" aria-label="Typ">
+            <option value=""></option>
+            <option>PD</option>
+            <option>Ä</option>
+            <option>S</option>
+            <option>R</option>
+            <option>RF</option>
+          </select>
+          <textarea class="pp-ta" aria-label="Pflegediagnose"></textarea>
+        </div>
+      </td>
+      <td><textarea class="pp-ta" aria-label="Pflegeziele"></textarea></td>
+      <td><textarea class="pp-ta" aria-label="Zeitgrenze"></textarea></td>
+      <td><textarea class="pp-ta" aria-label="Pflegeinterventionen"></textarea></td>`;
+    tbody.appendChild(tr);
+
+    // Auto-resize for pp textareas
+    tr.querySelectorAll('textarea.pp-ta').forEach(ta => {
+      ta.addEventListener('input', () => autoResize(ta));
+    });
+  }
+}
+
+// ════════════════════════════════════════════
+// TEXTAREA AUTO-RESIZE
+// ════════════════════════════════════════════
+function autoResize(ta) {
+  ta.style.height = 'auto';
+  ta.style.height = ta.scrollHeight + 'px';
+}
+
+// ════════════════════════════════════════════
+// START EXAM
+// ════════════════════════════════════════════
+async function startExam() {
+  // Pick random Krankheitsbild and Fall number
+  const k = KRANKHEITSBILDER[Math.floor(Math.random() * KRANKHEITSBILDER.length)];
+  const fallNum = Math.floor(Math.random() * 3) + 1;
+
+  state.krankheitsbild = k;
+  state.fallNum = fallNum;
+  state.submission = null;
+
+  // Update header badge
+  document.getElementById('exam-krankheit-badge').textContent = k.name;
+  document.getElementById('fall-meta').textContent = `Fall ${fallNum} / 3`;
+
+  // Clear DURST fields
+  ['d','u','r','s','t'].forEach(id => {
+    const el = document.getElementById('durst-' + id);
+    if (el) { el.value = ''; el.style.height = ''; }
+  });
+
+  // Build Pflegeplanung table
+  buildPP();
+
+  // Show exam screen with loading state
+  document.getElementById('fall-text').innerHTML = '<p class="fall-loading">Lädt Fall Beispiel…</p>';
+  showScreen('screen-exam');
+  startTimer();
+
+  // Fetch fall beispiel
+  try {
+    const md = await loadFallBeispiel(k.slug, fallNum);
+    state.fallText = md;
+    renderFallText(md);
+  } catch (err) {
+    document.getElementById('fall-text').innerHTML =
+      `<p class="fall-error">
+        <strong>Datei nicht gefunden:</strong> data/fall-beispiele/${k.slug}_fall${fallNum}.md<br>
+        Bitte zuerst die Fall Beispiele in <code>data/fall-beispiele/</code> erstellen und den Simulator neu laden.
+      </p>`;
+  }
+}
+
+// ════════════════════════════════════════════
+// COLLECT ANSWERS
+// ════════════════════════════════════════════
+function collectDurst() {
+  return {
+    D: document.getElementById('durst-d').value.trim(),
+    U: document.getElementById('durst-u').value.trim(),
+    R: document.getElementById('durst-r').value.trim(),
+    S: document.getElementById('durst-s').value.trim(),
+    T: document.getElementById('durst-t').value.trim(),
+  };
+}
+
+function collectPP() {
+  const rows = [];
+  document.querySelectorAll('#pp-tbody tr').forEach((tr, i) => {
+    const nr   = tr.querySelector('input.nr-in').value.trim();
+    const typ  = tr.querySelector('select.type-sel').value;
+    const tas  = tr.querySelectorAll('textarea.pp-ta');
+    const diag = tas[0].value.trim();
+    const ziel = tas[1].value.trim();
+    const zg   = tas[2].value.trim();
+    const intv = tas[3].value.trim();
+    // Only include rows that have any content
+    if (nr || typ || diag || ziel || zg || intv) {
+      rows.push({ row: i + 1, nr, typ, diag, ziel, zg, intv });
+    }
+  });
+  return rows;
+}
+
+// ════════════════════════════════════════════
+// SUBMIT EXAM
+// ════════════════════════════════════════════
+function submitExam() {
+  stopTimer();
+
+  const durst = collectDurst();
+  const pp    = collectPP();
+
+  state.submission = { durst, pp, krankheitsbild: state.krankheitsbild, fallNum: state.fallNum };
+
+  // Update results header
+  document.getElementById('results-title').textContent =
+    `Auswertung — ${state.krankheitsbild.name}`;
+
+  // Render submitted DURST answers
+  renderSubmittedDurst(durst);
+
+  // Render submitted PP rows
+  renderSubmittedPP(pp);
+
+  // Reset Q&A
+  const qaMsgs = document.getElementById('qa-messages');
+  qaMsgs.innerHTML = '<div class="qa-msg ai">Deine Antworten wurden gespeichert. Die KI-Auswertung wird in Schritt 2 aktiviert. Du kannst aber schon jetzt Fragen zum Krankheitsbild stellen — beachte, dass die Antworten noch nicht gegen deine Eingaben abgeglichen werden.</div>';
+
+  showScreen('screen-results');
+}
+
+// ════════════════════════════════════════════
+// RENDER SUBMITTED ANSWERS
+// ════════════════════════════════════════════
+function renderSubmittedDurst(durst) {
+  const container = document.getElementById('submitted-durst');
+  container.innerHTML = '';
+  const labels = {
+    D: 'D — Definition',
+    U: 'U — Ursachen & Pathophysiologie',
+    R: 'R — Risiken & Komplikationen',
+    S: 'S — Symptome & Diagnostik',
+    T: 'T — Therapie & Pflege',
+  };
+  Object.entries(labels).forEach(([key, label]) => {
+    const item = document.createElement('div');
+    item.className = 'fb-item';
+    item.style.flexDirection = 'column';
+    item.style.gap = '4px';
+    item.style.marginBottom = '12px';
+
+    const lbl = document.createElement('strong');
+    lbl.style.fontSize = '12px';
+    lbl.textContent = label;
+
+    const preview = document.createElement('div');
+    preview.className = 'answer-preview' + (durst[key] ? '' : ' empty');
+    preview.textContent = durst[key] || '(keine Eingabe)';
+
+    item.appendChild(lbl);
+    item.appendChild(preview);
+    container.appendChild(item);
+  });
+}
+
+function renderSubmittedPP(rows) {
+  const container = document.getElementById('submitted-pp');
+  if (rows.length === 0) {
+    container.innerHTML = '<p class="answer-preview empty">(keine Zeilen ausgefüllt)</p>';
+    return;
+  }
+  container.innerHTML = '';
+  rows.forEach(r => {
+    const item = document.createElement('div');
+    item.style.marginBottom = '8px';
+    item.style.fontSize = '12px';
+    item.style.lineHeight = '1.6';
+    item.innerHTML =
+      `<strong>Nr. ${r.nr || r.row}${r.typ ? ' [' + r.typ + ']' : ''}:</strong> ${escHtml(r.diag) || '<em>—</em>'}` +
+      (r.ziel   ? ` · <em>Ziel:</em> ${escHtml(r.ziel)}`   : '') +
+      (r.zg     ? ` · <em>bis:</em> ${escHtml(r.zg)}`      : '') +
+      (r.intv   ? `<br><em>Interventionen:</em> ${escHtml(r.intv)}` : '');
+    container.appendChild(item);
+  });
+}
+
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ════════════════════════════════════════════
+// NEW EXAM
+// ════════════════════════════════════════════
+function newExam() {
+  showScreen('screen-landing');
+}
+
+// ════════════════════════════════════════════
+// Q&A — STUB (real API call added in step 2)
+// ════════════════════════════════════════════
+const QA_STUB_REPLIES = [
+  'Die KI-Auswertung und der Q&A-Chat werden in Schritt 2 mit der Anthropic API verbunden. Deine Frage wurde notiert.',
+  'Gute Frage! Die automatische Antwort ist in Kürze verfügbar, sobald der API-Key integriert wird.',
+  'Im nächsten Build-Schritt wird Claude Sonnet diese Frage anhand der Wissensdatenbank beantworten.',
+];
+let qaStubIdx = 0;
+
+function sendQA() {
+  const inp = document.getElementById('qa-input');
+  const msg = inp.value.trim();
+  if (!msg) return;
+
+  const box = document.getElementById('qa-messages');
+
+  const uMsg = document.createElement('div');
+  uMsg.className = 'qa-msg user';
+  uMsg.textContent = msg;
+  box.appendChild(uMsg);
+  inp.value = '';
+  box.scrollTop = box.scrollHeight;
+
+  // Stub response
+  setTimeout(() => {
+    const aMsg = document.createElement('div');
+    aMsg.className = 'qa-msg ai';
+    aMsg.textContent = QA_STUB_REPLIES[qaStubIdx % QA_STUB_REPLIES.length];
+    qaStubIdx++;
+    box.appendChild(aMsg);
+    box.scrollTop = box.scrollHeight;
+  }, 500);
+}
+
+// ════════════════════════════════════════════
+// PRINT / PDF
+// ════════════════════════════════════════════
+function printAll() {
+  const exam    = document.getElementById('screen-exam');
+  const results = document.getElementById('screen-results');
+  exam.classList.add('active');
+  results.classList.add('active');
+  window.print();
+  exam.classList.remove('active');
+}
+</script>
+</body>
+</html>

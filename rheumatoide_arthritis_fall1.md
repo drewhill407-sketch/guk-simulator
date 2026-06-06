@@ -1,0 +1,7 @@
+# Fall 1 – Rheumatoide Arthritis
+
+Frau Elisabeth Kern ist 48 Jahre alt, verheiratet und wohnt mit ihrem Mann in einer Wohnung in Salzburg. Sie arbeitet halbtags als Floristin, ein Beruf, der ihr viel bedeutet. Die beiden Kinder sind erwachsen und ausgezogen. Ihr Mann ist berufstätig; im Haushalt teilen sie sich die Aufgaben. Relevante Vorerkrankungen sind nicht bekannt. Aktuelle Medikation: Ibuprofen 400 mg bei Bedarf, seit kurzem Prednisolon 10 mg (1-0-0).
+
+Seit etwa einem Jahr klagt sie über Schmerzen und Morgensteifigkeit in den Fingern und Handgelenken, die meist über eine Stunde andauert. Zunächst führte sie die Beschwerden auf die körperliche Belastung bei der Arbeit zurück. In den letzten Monaten wurden die Gelenke an den Händen zunehmend geschwollen und warm, und sie bemerkt, dass ihr die feinmotorischen Tätigkeiten im Beruf — Binden, Schneiden, Arrangieren — immer schwerer fallen. Ihr Hausarzt überwies sie zur stationären Abklärung.
+
+Bei Aufnahme: RR 122/78 mmHg, HF 74/min, Temperatur 37,2 °C. An beiden Händen sind mehrere Fingergelenke sichtlich geschwollen, gerötet und auf Druck schmerzhaft. Die Greifkraft ist beidseitig deutlich vermindert. Im Labor zeigen sich erhöhte Entzündungswerte sowie ein positiver Rheumafaktor. Frau Kern wirkt besorgt und fragt, ob sie ihren Beruf weiterhin ausüben kann. Sie berichtet, dass die Schmerzen sie nachts häufig aufwecken und sie sich tagsüber erschöpft fühlt.

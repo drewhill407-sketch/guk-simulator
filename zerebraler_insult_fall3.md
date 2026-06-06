@@ -1,0 +1,7 @@
+# Fall 3 – Zerebraler Insult
+
+Herr Miloš Kovačević ist 58 Jahre alt, gebürtiger Serbe und lebt seit 25 Jahren in Österreich. Er ist verheiratet und wohnt mit seiner Frau und dem jüngeren Sohn in einer Gemeindewohnung. Als LKW-Fahrer ist er der Hauptverdiener der Familie; seine Frau spricht kaum Deutsch. Er wirkt nach Einschätzung des Pflegepersonals wenig krankheitseinsichtig und hat nach eigenen Angaben seit Jahren keinen Hausarzt aufgesucht. Vorerkrankungen: arterielle Hypertonie, starker Raucher (20 Zigaretten täglich seit 35 Jahren), Übergewicht. Aktuelle Medikation: Amlodipin 5 mg (1-0-0) — laut Ehefrau nimmt er es unregelmäßig.
+
+Heute Mittag kollabierte er auf dem Firmenparkplatz. Arbeitskollegen beobachteten, dass er plötzlich das Gleichgewicht verlor, zu Boden fiel und danach nicht mehr sprechen konnte. Während des Transports erbrach er einmal, seine Bewusstseinslage war schwankend.
+
+Bei Aufnahme: RR 212/118 mmHg, HF 102/min, SpO₂ 91 % (Raumluft), Temperatur 37,4 °C, GCS 9. Es zeigen sich eine ausgeprägte Schwäche der linken Körperhälfte, die Augen weichen konstant nach rechts ab, und das Schlucken ist stark beeinträchtigt — beim Speichelschlucken kommt es zur Aspiration. Die Bildgebung zeigt eine Einblutung ins Gehirn, die auf den stark erhöhten Blutdruck zurückgeführt wird. Eine Beatmung wird in Betracht gezogen, das weitere Vorgehen wird im Team besprochen. Die Ehefrau ist eingetroffen und sehr aufgewühlt; ein Dolmetscher wird organisiert.

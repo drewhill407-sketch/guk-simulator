@@ -1,0 +1,7 @@
+# Fall 2 – Multiple Sklerose
+
+Herr Thomas Reiter ist 41 Jahre alt, verheiratet und Vater zweier Kinder im Grundschulalter. Die Familie wohnt in einem Reihenhaus am Stadtrand von Graz. Er arbeitet als Lehrer an einer Hauptschule und ist nach eigenen Angaben sehr an seinem Beruf hängt. Seine Frau ist halbtags als Krankenschwester tätig. Die Erkrankung ist seit sechs Jahren bekannt; er befindet sich in regelmäßiger neurologischer Betreuung und nimmt seit der Diagnose ein immunmodulierendes Medikament. Aktuelle Medikation: Interferon beta-1a (wöchentlich s.c.), Baclofen 10 mg (1-1-1), Ibuprofen 400 mg bei Bedarf.
+
+In den letzten zwei Wochen hat sich sein Zustand deutlich verschlechtert. Er berichtet von einer zunehmenden Steifigkeit beider Beine, die das Gehen erheblich erschwert — er benötigt nun einen Gehstock, den er bisher nur selten brauchte. Hinzu kommen Blasenprobleme: Er muss häufig und plötzlich auf die Toilette, schafft es aber nicht immer rechtzeitig. Das belastet ihn stark, vor allem im Schulalltag. Seine Frau berichtet, dass er nachts kaum schläft und zunehmend gereizt wirkt.
+
+Bei Aufnahme: RR 126/80 mmHg, HF 78/min, Temperatur 37,8 °C, SpO₂ 98 %. Es zeigt sich eine erhöhte Muskelspannung in beiden Beinen mit sichtlich verlangsamtem und unsicherem Gang. Die Blasenfunktion ist nach Einschätzung des Teams abklärungsbedürftig. Herr Reiter wirkt erschöpft und niedergeschlagen. Er fragt, ob er weiterhin unterrichten kann, und äußert die Sorge, seiner Familie zur Last zu fallen.

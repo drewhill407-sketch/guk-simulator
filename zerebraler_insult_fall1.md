@@ -1,0 +1,7 @@
+# Fall 1 – Zerebraler Insult
+
+Herr Karl Brandner ist 71 Jahre alt und lebt seit dem Tod seiner Frau vor drei Jahren alleine in einer Eigentumswohnung im zweiten Stockwerk eines Altbaus ohne Aufzug. Er ist pensionierter Tischler, pflegt seinen Schrebergarten und kommt im Alltag gut zurecht. Seine Tochter wohnt etwa 20 Kilometer entfernt und besucht ihn an den Wochenenden. Bekannte Vorerkrankungen sind eine arterielle Hypertonie sowie erhöhte Blutfettwerte; er raucht seit 40 Jahren etwa zehn Zigaretten täglich. Aktuelle Medikation: Ramipril 5 mg (1-0-0), Amlodipin 10 mg (1-0-0), Atorvastatin 40 mg (0-0-1), ASS 100 mg (1-0-0).
+
+Heute Morgen fand ihn seine Tochter auf dem Küchenboden sitzend, verwirrt und kaum ansprechbar. Die rechte Körperseite wirkte schlaff, der Mund leicht verzogen. Auf Ansprechen reagierte er nur mit unverständlichen Lauten. Der Rettungsdienst wurde sofort alarmiert, die Einlieferung erfolgte innerhalb von 45 Minuten.
+
+Bei Aufnahme: RR 188/104 mmHg, HF 88/min (unregelmäßig), SpO₂ 94 % (Raumluft), Temperatur 36,8 °C. Es zeigt sich eine ausgeprägte Schwäche der rechten Körperhälfte, eine hängende rechte Mundseite sowie der vollständige Verlust der Sprache — Herr Brandner kann weder sprechen noch Aufforderungen befolgen. Die bildgebende Untersuchung zeigt einen Gefäßverschluss im Bereich der linken Hirnhälfte ohne Blutungsnachweis. Im EKG wird erstmals ein Vorhofflimmern festgestellt. Herr Brandner wird auf die neurologische Stroke Unit aufgenommen. Die Tochter ist als Angehörige erreichbar und übernimmt die Kommunikation mit dem Team.
