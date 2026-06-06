@@ -1,0 +1,7 @@
+# Fall 3 – Myokardinfarkt
+
+Herr Dragan Petrović ist 55 Jahre alt, verheiratet, gebürtiger Bosnier und lebt seit zwanzig Jahren in Österreich. Er arbeitet als Lagerarbeiter und ist der Hauptverdiener der Familie. Seine Frau spricht wenig Deutsch. Er selbst kommuniziert auf Alltagsniveau gut, medizinische Begriffe bereiten ihm jedoch Schwierigkeiten. Vorerkrankungen: arterielle Hypertonie, starker Raucher. Medikation: Ramipril 5 mg (1-0-0) — nach eigenen Angaben nimmt er es „wenn er dran denkt".
+
+Bereits gestern Nachmittag hatte er starke Schmerzen in der Brust und im linken Arm, die nach etwa einer Stunde von selbst nachließen. Er ruhte sich aus und hoffte, es vergehe. Heute Morgen kehrten die Schmerzen zurück, stärker als zuvor. Erst auf Drängen eines Arbeitskollegen ließ er sich in die Notaufnahme bringen. Er wirkt verlegen und entschuldigt sich mehrfach dafür, dass er „so lange gewartet" habe.
+
+Bei Aufnahme: RR 100/65 mmHg, HF 110/min, Atemfrequenz 24/min, SpO₂ 91 % (Raumluft), Temperatur 36,8 °C. Herr Petrović ist blass, kaltschweißig und wirkt deutlich reduziert. Er gibt den Brustschmerz mit neun von zehn an. Über den Lungenbasen sind erste Rasselgeräusche hörbar. Das Team reagiert rasch; ein Dolmetscher wird für die Frau organisiert, die kurz nach Aufnahme eintrifft und sichtlich aufgewühlt ist. Die Situation wird als zeitkritisch eingestuft, das weitere Vorgehen läuft unter erhöhtem Druck.

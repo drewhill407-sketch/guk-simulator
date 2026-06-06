@@ -1,0 +1,7 @@
+# Fall 1 – PAVK
+
+Herr Walter Grundner ist 69 Jahre alt, verheiratet und pensionierter Postbeamter. Er lebt mit seiner Frau in einem Reihenhaus in Niederösterreich. Er raucht seit vierzig Jahren etwa zehn Zigaretten täglich und lehnt es bisher ab, damit aufzuhören. Vorerkrankungen: arterielle Hypertonie, Hypercholesterinämie, Diabetes mellitus Typ 2. Aktuelle Medikation: Metformin 1000 mg (1-0-1), Ramipril 10 mg (1-0-0), Atorvastatin 40 mg (0-0-1), ASS 100 mg (1-0-0).
+
+Seit etwa einem Jahr bemerkt er, dass er beim Spazierengehen nach ungefähr zweihundert Metern anhalten muss, weil die Waden so stark schmerzen. Stehen bleiben lindere den Schmerz nach wenigen Minuten, dann könne er weitergehen. Er habe das zunächst dem Alter zugeschrieben. Seine Frau drängte ihn zur Vorstellung beim Hausarzt, der ihn nun zur weiteren Abklärung überwiesen hat.
+
+Bei Aufnahme in der Gefäßambulanz: RR 158/94 mmHg, HF 78/min. Herr Grundner wirkt körperlich gut erhalten, ist jedoch sichtlich unwillig und betont mehrfach, es sei „doch nicht so schlimm". Die Beine sind kühl, an beiden Füßen sind die Pulse abgeschwächt tastbar. Die Haut an den Unterschenkeln wirkt dünn und glänzend, die Behaarung ist spärlich. Es bestehen keine offenen Wunden. Die Durchblutungsmessung ergibt einen deutlich reduzierten Wert. Er wird zur stationären Abklärung und Therapieplanung aufgenommen; ein Gefäßspezialist wird hinzugezogen.

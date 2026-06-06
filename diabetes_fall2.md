@@ -1,0 +1,7 @@
+# Fall 2 – Diabetes mellitus
+
+Herr Rudolf Haas ist 71 Jahre alt, verwitwet und lebt alleine in einer Wohnung in Salzburg. Er hat zwei erwachsene Kinder, die sich wenig melden. Er ist pensionierter Fleischer, übergewichtig und bewegt sich kaum. Bekannte Vorerkrankungen: Diabetes mellitus Typ 2 seit vierzehn Jahren, arterielle Hypertonie, beginnende Niereninsuffizienz, diabetische Polyneuropathie. Aktuelle Medikation: Metformin 1000 mg (1-0-1), Glimepirid 2 mg (1-0-0), Ramipril 5 mg (1-0-0). Er gibt zu, die Ernährungsempfehlungen „nicht so genau" zu nehmen und die Blutzuckermessungen seit Monaten unterlassen zu haben.
+
+Sein Nachbar brachte ihn in die Notaufnahme, nachdem er ihn seit zwei Tagen nicht gesehen hatte. Als er anklopfte, öffnete Herr Haas benommen und desorientiert die Tür. Er hatte in den letzten Tagen kaum getrunken und kaum gegessen. Er selbst kann keine genauen Angaben zur Vorgeschichte machen.
+
+Bei Aufnahme: RR 105/70 mmHg, HF 108/min, Atemfrequenz 20/min, SpO₂ 95 % (Raumluft), Temperatur 37,1 °C. Herr Haas ist somnolent, antwortet auf direkte Ansprache, ist jedoch zeitlich und örtlich desorientiert. Die Mundschleimhaut ist stark ausgetrocknet, der Hautturgor deutlich reduziert. Am rechten Unterschenkel fällt eine schlecht heilende Wunde auf, die er nicht erwähnt hatte. Der Blutzucker wird mit über 38 mmol/l gemessen, Ketonkörper sind nicht nachweisbar. Es wird eine ausgeprägte Exsikkose festgestellt; die Infusionstherapie wird sofort eingeleitet.

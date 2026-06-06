@@ -1,0 +1,7 @@
+# Fall 3 – Chronisch entzündliche Darmerkrankungen
+
+Frau Andrea Summer ist 38 Jahre alt, geschieden und lebt alleine mit ihrer neunjährigen Tochter in Salzburg. Sie arbeitet Teilzeit als Verkäuferin. Die Erkrankung ist seit zwölf Jahren bekannt, sie hatte mehrere Operationen und ist auf eine immunsuppressive Therapie eingestellt. Aktuelle Medikation: Azathioprin 100 mg (1-0-0), Budesonid 9 mg (1-0-0). Sie ist der gastroenterologischen Ambulanz bekannt.
+
+Neben einem erneuten Aufflackern der Bauchbeschwerden mit krampfartigen Schmerzen und mehrfachen Durchfällen täglich klagt sie seit Wochen über stark geschwollene, schmerzhafte Gelenke an beiden Knien sowie über gerötete, druckschmerzhafte Hautstellen an den Unterschenkeln. Außerdem habe sie bemerkt, dass ihre Augen seit einigen Tagen gerötet und lichtempfindlich seien. Sie stellt sich heute in der Ambulanz vor, weil sie kaum mehr arbeiten kann.
+
+Bei Aufnahme in der Ambulanz: RR 118/76 mmHg, HF 86/min, Temperatur 37,6 °C. Frau Summer wirkt erschöpft und angespannt. An beiden Unterschenkeln zeigen sich gerötete, leicht erhabene Hautveränderungen. Die Kniegelenke sind beidseits geschwollen und überwärmt. Die Augen sind gerötet, sie kneift sie bei Licht zusammen. Sie fragt, ob das alles zusammenhänge, und wirkt erleichtert, als ihr erklärt wird, dass diese Beschwerden Teil desselben Krankheitsbildes sein können. Eine koordinierte Weiterbetreuung mit Dermatologie und Augenheilkunde wird eingeleitet.
