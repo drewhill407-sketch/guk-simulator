@@ -210,113 +210,170 @@ body{
 .fall-text .fall-error{color:var(--red);font-size:12px;}
 .fall-text .fall-field-label{font-weight:600;}
 
-/* ── DURST ── */
-.durst-grid{
-  display:grid;
-  grid-template-columns:140px 1fr;
-  border-top:none;
+/* ── DURST OPEN FIELD ── */
+.durst-open-wrap{
+  display:flex;
+  min-height:500px;
 }
 
-.durst-label{
-  padding:10px 14px;
-  font-size:12px;
-  font-weight:600;
-  border-right:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  background:var(--bg);
-  color:var(--text);
+.durst-guide{
+  width:108px;
+  min-width:108px;
+  padding:28px 14px;
   display:flex;
   flex-direction:column;
-  gap:2px;
+  justify-content:space-between;
+  border-right:1px solid var(--border);
+  background:var(--bg);
+  user-select:none;
 }
 
-.durst-label span{font-size:10px;color:var(--muted);font-weight:400;}
-
-.durst-field{
-  border-bottom:1px solid var(--border);
+.dg-item{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
 }
 
-.durst-grid .durst-label:last-of-type,
-.durst-grid .durst-field:last-of-type{border-bottom:none;}
+.dg-letter{
+  font-size:22px;
+  font-weight:700;
+  color:#d8d4cc;
+  line-height:1;
+  font-family:'IBM Plex Mono',monospace;
+}
 
-textarea.durst-ta{
-  width:100%;
+.dg-desc{
+  font-size:10px;
+  color:#ccc;
+  line-height:1.35;
+  font-weight:400;
+  letter-spacing:.01em;
+}
+
+textarea.durst-open{
+  flex:1;
   border:none;
-  resize:vertical;
+  resize:none;
   font-family:'IBM Plex Sans',sans-serif;
-  font-size:12px;
+  font-size:13px;
   color:var(--text);
   background:transparent;
-  padding:10px 14px;
-  min-height:72px;
-  line-height:1.6;
+  padding:20px 18px;
+  line-height:1.9;
+  min-height:500px;
 }
-textarea.durst-ta:focus{outline:none;background:#f8fdf9;}
+textarea.durst-open:focus{outline:none;background:#fafdf9;}
 
-/* ── PFLEGEPLAN ── */
-table.pp{width:100%;border-collapse:collapse;table-layout:fixed;}
-col.pp-nr{width:44px;}
-col.pp-diag{width:32%;}
-col.pp-ziel{width:22%;}
-col.pp-zg{width:80px;}
+/* ── PFLEGEPLAN — PAPER FORM ── */
+.pp-paper-wrap{
+  background:#fff;
+  border:1px solid #bbb;
+  box-shadow:0 2px 0 #ccc, 0 4px 16px rgba(0,0,0,.08);
+  margin:0;
+  overflow-x:auto;
+}
+
+.pp-form-header{
+  padding:10px 18px 8px;
+  border-bottom:2px solid #222;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  background:#fff;
+}
+
+.pp-form-title{
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#111;
+}
+
+.pp-form-sub{
+  font-size:10px;
+  color:#888;
+  letter-spacing:.04em;
+}
+
+table.pp{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  min-width:760px;
+}
+col.pp-nr{width:36px;}
+col.pp-diag{width:28%;}
+col.pp-ziel{width:21%;}
+col.pp-zg{width:72px;}
 col.pp-int{width:auto;}
 
 table.pp th{
-  border:1px solid var(--border);
-  padding:6px 8px;
-  font-size:10px;
-  font-weight:600;
-  text-align:center;
-  background:var(--bg);
-  letter-spacing:.03em;
+  border-right:1px solid #bbb;
+  border-bottom:1.5px solid #444;
+  padding:5px 8px;
+  font-size:9px;
+  font-weight:700;
+  text-align:left;
+  background:#f4f2ed;
+  letter-spacing:.07em;
   text-transform:uppercase;
+  color:#444;
 }
+table.pp th:last-child{border-right:none;}
 
 table.pp td{
-  border:1px solid var(--border);
+  border-right:1px solid #d0cdc6;
+  border-bottom:1px solid #e0ddd7;
   padding:0;
   vertical-align:top;
 }
+table.pp td:last-child{border-right:none;}
+table.pp tr:last-child td{border-bottom:none;}
+
+/* alternate row tint */
+table.pp tbody tr:nth-child(even) td{background:#fdfcf9;}
 
 td.pp-nr-cell{
   text-align:center;
   vertical-align:middle;
   font-size:11px;
-  color:var(--muted);
-  background:#fafaf8;
-  padding:2px;
+  color:#aaa;
+  background:#f7f5f0;
+  border-right:1.5px solid #c8c4bb;
+  padding:0;
 }
 
 input.nr-in{
   width:100%;border:none;background:transparent;
   font-size:11px;font-family:'IBM Plex Mono',monospace;
-  text-align:center;color:var(--text);padding:4px 2px;
+  text-align:center;color:var(--text);padding:6px 2px;
 }
-input.nr-in:focus{outline:none;background:#f8fdf9;}
+input.nr-in:focus{outline:none;}
 
 .diag-inner{display:flex;align-items:stretch;height:100%;}
 
 select.type-sel{
-  width:38px;min-width:38px;
-  border:none;border-right:1px solid var(--border);
-  background:#f5f3ee;
-  font-size:11px;font-weight:600;
+  width:36px;min-width:36px;
+  border:none;border-right:1px solid #d0cdc6;
+  background:#f0ede7;
+  font-size:10px;font-weight:700;
   font-family:'IBM Plex Sans',sans-serif;
-  color:var(--text);
+  color:#555;
   cursor:pointer;
   appearance:none;-webkit-appearance:none;
   text-align:center;padding:0 2px;
 }
-select.type-sel:focus{outline:2px solid var(--green);}
+select.type-sel:focus{outline:2px solid var(--green);outline-offset:-1px;}
 
 textarea.pp-ta{
   width:100%;border:none;resize:none;
   font-family:'IBM Plex Sans',sans-serif;
-  font-size:11px;color:var(--text);
-  background:transparent;padding:5px 7px;
-  min-height:34px;line-height:1.5;overflow:hidden;
+  font-size:11.5px;color:var(--text);
+  background:transparent;padding:6px 8px;
+  min-height:38px;line-height:1.55;overflow:hidden;
 }
-textarea.pp-ta:focus{outline:none;background:#f8fdf9;}
+textarea.pp-ta:focus{outline:none;background:#f5fdf7;}
 
 /* ── SUBMIT BAR ── */
 .submit-bar{
@@ -580,25 +637,23 @@ textarea.pp-ta:focus{outline:none;background:#f8fdf9;}
     <!-- DURST -->
     <div class="section">
       <div class="section-head"><h2>DURST Schema</h2></div>
-      <div class="durst-grid">
-        <div class="durst-label">D<span>Definition</span></div>
-        <div class="durst-field"><textarea id="durst-d" class="durst-ta" placeholder="Was ist die Erkrankung? Definition, Klassifikation, relevante Subtypen…"></textarea></div>
-        <div class="durst-label">U<span>Ursachen &amp; Pathophysiologie</span></div>
-        <div class="durst-field"><textarea id="durst-u" class="durst-ta" placeholder="Ätiologie, Risikofaktoren, Pathomechanismus…"></textarea></div>
-        <div class="durst-label">R<span>Risiken &amp; Komplikationen</span></div>
-        <div class="durst-field"><textarea id="durst-r" class="durst-ta" placeholder="Komplikationen bei schlechter Behandlung, Krankheitsprogression…"></textarea></div>
-        <div class="durst-label">S<span>Symptome &amp; Diagnostik</span></div>
-        <div class="durst-field"><textarea id="durst-s" class="durst-ta" placeholder="Klinische Zeichen, Labor, Bildgebung…"></textarea></div>
-        <div class="durst-label">T<span>Therapie &amp; Pflege</span></div>
-        <div class="durst-field"><textarea id="durst-t" class="durst-ta" placeholder="Pharmakologie (Handelsname, Wirkung, NW), pflegerische Maßnahmen…"></textarea></div>
+      <div class="durst-open-wrap">
+        <div class="durst-guide">
+          <div class="dg-item"><span class="dg-letter">D</span><span class="dg-desc">Definition &amp; Klassifikation</span></div>
+          <div class="dg-item"><span class="dg-letter">U</span><span class="dg-desc">Ursachen &amp; Pathophysiologie</span></div>
+          <div class="dg-item"><span class="dg-letter">R</span><span class="dg-desc">Risiken &amp; Komplikationen</span></div>
+          <div class="dg-item"><span class="dg-letter">S</span><span class="dg-desc">Symptome &amp; Diagnostik</span></div>
+          <div class="dg-item"><span class="dg-letter">T</span><span class="dg-desc">Therapie &amp; Pflege</span></div>
+        </div>
+        <textarea id="durst-all" class="durst-open" placeholder="DURST Schema hier eingeben…"></textarea>
       </div>
     </div>
 
     <!-- PFLEGEPLANUNG -->
-    <div class="section">
-      <div class="section-head">
-        <h2>Pflegeplanung — POP</h2>
-        <span style="font-size:10px;color:var(--muted);">PD · Ä · S · RF · R</span>
+    <div class="pp-paper-wrap">
+      <div class="pp-form-header">
+        <span class="pp-form-title">Pflegeplanung — POP</span>
+        <span class="pp-form-sub">PD · Ä · S · R · RF</span>
       </div>
       <table class="pp">
         <colgroup>
@@ -767,10 +822,9 @@ const state = {
     list.appendChild(chip);
   });
 
-  // Auto-resize for DURST textareas
-  document.querySelectorAll('textarea.durst-ta').forEach(ta => {
-    ta.addEventListener('input', () => autoResize(ta));
-  });
+  // Auto-grow DURST open field
+  const durstAll = document.getElementById('durst-all');
+  if (durstAll) durstAll.addEventListener('input', () => autoResize(durstAll));
 })();
 
 // ════════════════════════════════════════════
@@ -910,11 +964,9 @@ async function startExam() {
   document.getElementById('exam-krankheit-badge').textContent = k.name;
   document.getElementById('fall-meta').textContent = `Fall ${fallNum} / 3`;
 
-  // Clear DURST fields
-  ['d','u','r','s','t'].forEach(id => {
-    const el = document.getElementById('durst-' + id);
-    if (el) { el.value = ''; el.style.height = ''; }
-  });
+  // Clear DURST field
+  const durstEl = document.getElementById('durst-all');
+  if (durstEl) { durstEl.value = ''; durstEl.style.height = ''; }
 
   // Build Pflegeplanung table
   buildPP();
@@ -943,11 +995,7 @@ async function startExam() {
 // ════════════════════════════════════════════
 function collectDurst() {
   return {
-    D: document.getElementById('durst-d').value.trim(),
-    U: document.getElementById('durst-u').value.trim(),
-    R: document.getElementById('durst-r').value.trim(),
-    S: document.getElementById('durst-s').value.trim(),
-    T: document.getElementById('durst-t').value.trim(),
+    all: document.getElementById('durst-all').value.trim(),
   };
 }
 
@@ -1003,32 +1051,11 @@ function submitExam() {
 function renderSubmittedDurst(durst) {
   const container = document.getElementById('submitted-durst');
   container.innerHTML = '';
-  const labels = {
-    D: 'D — Definition',
-    U: 'U — Ursachen & Pathophysiologie',
-    R: 'R — Risiken & Komplikationen',
-    S: 'S — Symptome & Diagnostik',
-    T: 'T — Therapie & Pflege',
-  };
-  Object.entries(labels).forEach(([key, label]) => {
-    const item = document.createElement('div');
-    item.className = 'fb-item';
-    item.style.flexDirection = 'column';
-    item.style.gap = '4px';
-    item.style.marginBottom = '12px';
-
-    const lbl = document.createElement('strong');
-    lbl.style.fontSize = '12px';
-    lbl.textContent = label;
-
-    const preview = document.createElement('div');
-    preview.className = 'answer-preview' + (durst[key] ? '' : ' empty');
-    preview.textContent = durst[key] || '(keine Eingabe)';
-
-    item.appendChild(lbl);
-    item.appendChild(preview);
-    container.appendChild(item);
-  });
+  const preview = document.createElement('div');
+  preview.className = 'answer-preview' + (durst.all ? '' : ' empty');
+  preview.style.maxHeight = '320px';
+  preview.textContent = durst.all || '(keine Eingabe)';
+  container.appendChild(preview);
 }
 
 function renderSubmittedPP(rows) {
